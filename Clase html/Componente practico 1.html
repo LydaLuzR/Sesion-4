@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="es">   
+<head>
+<title>Registro COVID-19</title>
+<meta charset="utf-8" />
+<meta name="description" content="Github repository">
+</head>
+
+<body>
+    <h1>REGISTRO PARA LA VACUNACIÓN COVID-19</h1> Titulo de la página
+    <form action="" method="GET">    <!-- Esta etiqueta es para empezar a crear un formulario de registro y el "GET" se usa para enviar la información al servidor--> 
+        <fieldset>    <!-- Esta etiqueta sirve para crear una especie de campo o decoración para las casillas -->          
+            <legend>Datos personales</legend>   <!-- Esta es la etiqueta del título de dicho formulario -->
+        <label>Nombre: </label> <!-- Este es el nombre de la casilla que se debe llenar -->
+        <input type="text" name="Nombre" id=""> <!-- Y aquí se coloca qué tipo de casilla es, si es de texto o de otra indole -->
+        <br></br>   <!-- Salto de página -->
+        <label>Usuario: </label> <!-- Otro título de la casilla -->
+        <input type="text" name="Usuario" id="">
+        <br></br>
+        
+        <fieldset> 
+            <legend>Información adicional</legend>
+        <label>Sexo: </label> 
+        <input type="radio" name="Sexo" id=""> <!-- Esta es una especie de selección  -->
+        Hombre
+        <input type="radio" name="Sexo" id=""> <!-- Esta es la alternativa a la selección -->
+        Mujer
+        <br></br>
+        <label"">Correo</label>
+        <input type="email" name="Correo" id=""> <br></br> <!-- Este al ser una etiqueta de tipo "Email" va a redireccionar y si no ponen algo válido con un "@" no va a funcionar-->
+        <label"">Contraseña</label>
+        <input type="password" name="Contraseña" id=""> <!-- Este al ser tipo contraseña al escribir en dicho espacio no va a mostrar los caracteres -->
+        <br></br>
+        <label for="Cargo">Rol en equipo </label> <!-- Esta es la etiqueta que determina el espavio y nombre de la casilla -->
+        <select name="Cargo" id="">     <!-- Esta es la que abre el menú de desplegables -->
+        <option value="" selected="Selected">Selecciona</option>  <!-- Este es el valor/texto que sale al desplegar el menú, no es un seleccionable -->
+        <option value="">Programador</option>   <!-- Estas son las opciones de dicho menú -->
+        <option value="">Analista</option>
+        <option value="">Soporte tecnico</option>
+        <option value="">Otro</option>
+        </select>
+        <p>           
+            <input type="checkbox" name="Condiciones" id=""> <!-- Esta es la casilla o palomilla para marcar o desmarcar -->
+            "Declaró haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos"
+            <br></br>
+            <button type="submit">Enviar</button> <!-- Este botón funciona para enviar dicha información hacia donde va dirigida -->
+            <button type="reset">Borrar</button>    <!-- Este funciona para restablecer/borrar la información introducida -->
+        </p>
+
+        </fieldset>
+
+         
+    </form>
+
+</body>
